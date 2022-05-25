@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/index/detail",
+    "pages/index/index",
+    "pages/charge/index",
+    "pages/verify/index",
+    "pages/index/fabu",
+    "pages/love/fabu",
+    "pages/index/add",
+    "pages/love/detail",
+    "pages/love/add",
+    "pages/love/index",
+    "pages/love/reply",
+    "pages/index/reply",
+    "pages/mine/index",
+    "pages/about/index",
+    "pages/mine/edit",
+    "pages/feedback/index",
+    "pages/info/index",
+    "pages/register/index"
+   
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#1677FF",
+    "navigationBarTitleText": "失物招领小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#1677FF",
+    "color": "#909090",
+    "list": [
+      {
+        "text": "失物招领",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/homeSL.png",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "表白墙",
+        "iconPath": "images/love.png",
+        "selectedIconPath": "images/loveSL.png",
+        "pagePath": "pages/love/index"
+      },
+      {
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/mySL.png",
+        "pagePath": "pages/mine/index"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

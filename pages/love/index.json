@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "i-icon": "../../dist/icon/index",
+    "i-tag": "../../dist/tag/index",
+    "i-loading": "../../dist/load-more/index"
+    
+  },
+  "navigationBarTitleText": "表白墙"
+}

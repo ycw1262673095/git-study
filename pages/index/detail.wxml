@@ -1,0 +1,95 @@
+<scroll-view>
+	<view class="title">
+	{{list.title}}
+	<i-tag color="green"  class="i-tags" wx:if="{{list.status==1}}">
+		<text wx:if="{{list.stu_no}}">被{{list.stu_no}}</text>
+		<text wx:else>已</text>{{list.type==0?'找到':'拾到'}}
+	</i-tag>
+	
+	</view>
+	<view class="subtitle_desc">
+		<view class="subtitle_desc-item">
+			<van-icon name="time" />
+			<text class='time'>{{list.addtimestr}}</text>
+		</view>
+		<view class="subtitle_desc-item">
+			<van-icon type="browse" />
+			<text class='time'>{{list.visitcount}}</text>
+		</view>
+	</view>
+	<view class="region">
+		<view class="info-item-key">地址：</view>
+		<view class="info-item-value">{{list.address}}</view>
+	</view>
+	<view class='item'>
+		<view class='item-band flexstart'>
+			<view class='left'>
+				<image src='{{list.avaturl}}' class='avaturl'></image>
+			</view>
+			<view class='right'>
+				<view class="item-band">
+					<view>
+						<view class="tag">发布者-{{list.type==0?'丢失':'捡到'}}</view>
+						<text>{{list.nickname}} </text>
+					</view>
+					<view class="left">
+						<view class='cancle' catchtap='tocall'>电话联系他</view>
+						<view class='cancle' wx:if="{{mineid!=list.uid&&list.status==0}}" catchtap='showoper'>{{list.type==0?'我拾到':'是我的'}}</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view wx:if="{{list.price>0}}">悬赏：{{list.price}}元</view>
+		<view class="circle-title">
+			<view class="circle"></view> 详情
+		</view>
+		<view class="content-list">{{list.content}}</view>
+		<view wx:if="{{list.imagelist.length>0}}">
+			<image wx:for="{{list.imagelist}}" class="contentuploadPics" mode="aspectFill" src="{{base_image_url+item}}" wx:key="index"></image>
+		</view>
+	</view>
+	<view class='brand' wx:if="{{commentlist.length>0}}">评论{{list.replycount}}</view>
+	<view class='comment' wx:if="{{commentlist.length>0}}">
+		<view class='item' wx:for="{{commentlist}}" wx:key="index">
+			<view class='item-band justnormal'>
+				<view class='left'>
+					<image src='{{item.avaturl}}' class='avaturl'></image>
+				</view>
+				<view class='right'>
+					<view class='left1 '>
+						<text>{{item.nickname}}</text>
+					</view>
+					<view class='item-content'>
+						<view class='section'>{{item.content}}</view>
+						<view wx:if="{{item.imagelist.length>0}}">
+							<image wx:for="{{item.imagelist}}" class="uploadPics" mode="aspectFill" src="{{base_image_url+item}}" wx:key="rr"></image>
+						</view>
+					</view>
+					<text class='timecolor'>{{item.addtimestr}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</scroll-view>
+<view class='bottom'>
+	<input class="input" type='text' disabled bindtap="toreply" placeholder='我要回复……'></input>
+	<button class="icontext"  open-type="share">       
+		<van-icon color='#999' type="share"size='23' />
+	</button>
+	<view class="icontext">
+    <van-icon  color='#999' type="more" size='23' />
+	</view>
+</view>
+<view class="shade" wx:if="{{showoper}}" bindtap="closeoper">
+		<view class="crate-album-guide" catchtap="refuse">
+			<view class="item">
+				<view>账户</view>
+				<view class="">
+					<input type="text" class="input" name="stu" value="{{stu}}" bindinput="inputstu" placeholder="请输入学号"></input>
+				</view>
+			</view>
+			<view class="btn-group">
+				<view catchtap="tofindstatus" class="btn  bg-color">提交</view>
+			</view>
+		</view>
+	</view>

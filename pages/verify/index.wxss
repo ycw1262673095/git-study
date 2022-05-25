@@ -1,0 +1,44 @@
+page {
+  background-color: #fff;
+}
+.container{
+  width: 94vw;
+  padding-top: 40rpx;
+  margin:0 auto;
+}
+.mbinput{
+  margin-bottom: 50rpx;
+}
+.inputitem {
+  border: 1px dashed #eee;
+  border-radius: 4rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 0;
+  align-items: center;
+}
+
+.inputlabel {
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  margin: 20rpx 0 10rpx;
+}
+
+.inputitem .input {
+  width: 80%;
+  padding: 0rpx 20rpx;
+  margin-left: 20rpx;
+}
+.savebtn{
+  margin:0 auto;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #fff;
+  color: #fff;
+  font-size: 30rpx;
+  margin-top: 80rpx;
+  margin-bottom: 120rpx;
+}

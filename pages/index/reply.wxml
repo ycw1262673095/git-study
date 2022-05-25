@@ -1,0 +1,9 @@
+<view class="container">
+  <form bindsubmit="bindSave">
+    <view class="mbinput">
+        <textarea placeholder="填写回复……" class="section" maxlength="300" name="content" />
+    </view>
+    <uploadmore id="uploadmore" uploadlist="{{faceimage}}" i-uploadpic="myuploadPic"  maxsize ="3"></uploadmore>
+    <button class="savebtn bg-color" formType="submit" loading="{{i_load}}" disabled="{{i_load}}">{{i_load?'发布中':'提交发布'}}</button>
+  </form>
+</view>

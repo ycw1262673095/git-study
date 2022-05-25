@@ -1,0 +1,12 @@
+
+// 获取头像路径
+function getimage(url,baseurl) {
+  if(!url) return '';
+  if(url.indexOf('../../') != -1) return url
+  if(url.indexOf('http://tmp/') != -1 || url.indexOf('wxfile://tmp_') != -1||url.indexOf('https://thirdwx.qlogo.cn') != -1)
+        return url
+  //服务器相对地址
+  console.log(baseurl+url)
+  return baseurl+url
+}
+module.exports.getimage =getimage;

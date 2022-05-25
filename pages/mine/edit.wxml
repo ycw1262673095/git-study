@@ -1,0 +1,60 @@
+<view style="height:1rpx"></view>
+<wxs src="./edit.wxs" module="tools" />
+<view class="contain-box">
+	<form bindsubmit="bindSave">
+		<view class="itembox">
+			<view class="itembox-head">
+				<view class="itembox-line bg-color"></view>
+				<view class="itembox-title">基本信息（用户名：{{list.nickname}}）</view>
+			</view>
+			<view style="height:14rpx"></view>
+			<view class="imagecontent">
+				<view class="imageleft">
+					<view class="imagetile" >
+					</view>
+					<view class="imagesubtile" >(jpg、png)≤10MB </view>
+					<view class="imagesubtile">Photo should be less than 6 month old</view>
+				</view>
+				<view class="imageright" bindtap="chooseimg">
+					<image src="{{tools.getimage(imglist[0],baseurl)}}" class="avaturl"></image>
+				</view>
+			</view>
+			<view class="itembox-body">
+				<view class="inputlabel">姓名</view>
+				<view class="inputitem">
+					<input class="input" name="nickname" value="{{list.nickname}}" placeholder-class="placeholder" placeholder="请输入姓名"></input>
+				</view>
+				<view class="inputlabel">密码</view>
+				<view class="inputitem">
+					<input class="input" name="password" value="{{list.password}}" placeholder-class="placeholder" placeholder="登录密码"></input>
+				</view>
+
+				<view class="inputlabel">余额</view>
+				<view class="inputitem">
+					<input class="input" name="price" disabled="true" value="{{list.price}}" placeholder-class="placeholder" placeholder="账户余额"></input>
+				</view>
+				<view class="inputlabel">年龄</view>
+				<view class="inputitem">
+					<input class="input" name="age" value="{{list.age}}" placeholder-class="placeholder" placeholder="年龄"></input>
+				</view>
+				<view class="inputlabel">性别</view>
+				<picker  bindchange="sexchange"  range="{{sexlist}}"  >
+					<view class="inputitem">
+							<input class="input" disabled="disabled" name="sex" placeholder-class="placeholder" placeholder="请选择性别" value="{{sexlist[sexindex]}}" ></input>
+					</view>
+				</picker>
+			</view>
+		</view>
+		<view class="itembox">
+			<view class="itembox-head">
+				<view class="itembox-line bg-color"></view>
+				<view class="itembox-title">个人描述</view>
+			</view>
+			<view class="itembox-body">
+				<textarea class="desc" name="content" maxlength="{{maxlength}}" value="{{list.desciption}}" placeholder="请输入个人描述"></textarea>
+			</view>
+		</view>
+		<button class="loginbtn bg-color" formType="submit" disabled="{{i_load}}" loading="{{i_load}}">保存</button>
+	</form>
+</view>
+

@@ -1,0 +1,17 @@
+@import '/wxParse/wxParse.wxss';
+.content{
+  line-height: 48rpx;
+  font-size: 30rpx;
+  color: #666;
+  background: #fff;
+  width: 96vw;
+  min-height:80vh;
+  box-shadow: 5rpx #666;
+  margin-left:2%;
+  padding: 20rpx 8rpx;
+  box-sizing: border-box;
+}
+.content image{
+  width: 100% !important;
+}
+

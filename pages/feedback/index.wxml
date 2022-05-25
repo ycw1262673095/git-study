@@ -1,0 +1,11 @@
+<view class="container">
+<!-- 携带from中bindSave数据触发submit事件-->
+  <form bindsubmit="bindSave">
+    <view class="mbinput">
+        <textarea placeholder="填写反馈意见……" class="section" maxlength="300" name="content" />
+    </view>
+    <uploadmore id="uploadmore" uploadlist="{{faceimage}}" i-uploadpic="myuploadPic"  maxsize ="9"></uploadmore>
+    <!-- loading是名称前是否带loding图标 disabled是否禁用 -->
+    <button class="savebtn bg-color" formType="submit" loading="{{i_load}}" disabled="{{i_load}}">{{i_load?'发布中':'提交发布'}}</button>
+  </form>
+</view>

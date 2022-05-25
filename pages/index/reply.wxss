@@ -1,0 +1,30 @@
+page {
+  background-color: #fff;
+}
+.container{
+  width: 94vw;
+  padding-top: 40rpx;
+  margin:0 auto;
+}
+.mbinput{
+  margin-bottom: 50rpx;
+}
+.myuploadPic{
+  height: 145rpx !important;
+  width: 180rpx !important;
+}
+.section {
+  padding: 15rpx 0 10rpx 0;
+  width: 100%;
+  height: 200rpx;
+}
+.savebtn{
+  margin:0 auto;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #fff;
+  color: #fff;
+  margin-top: 80rpx;
+  margin-bottom: 120rpx;
+}

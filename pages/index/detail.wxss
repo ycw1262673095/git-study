@@ -1,0 +1,266 @@
+scroll-view {
+  padding: 20rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-bottom: 130rpx;
+}
+
+.title {
+  font-size: 34rpx;
+  font-weight: bolder;
+  color: #333;
+  margin-bottom: 20rpx;
+  background: #fff;
+}
+.timecolor{
+  color: #999;
+  font-size: 27rpx;
+}
+.subtitle_desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25rpx;
+}
+
+.subtitle_desc-item {
+  display: flex;
+  align-items: center;
+}
+
+.subtitle_desc-item .time {
+  margin-left: 10rpx;
+  font-size: 26rpx;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25rpx;
+}
+
+.info-item {
+  width: 40vw;
+  font-size: 27rpx;
+  display: flex;
+  margin-bottom: 10rpx;
+  align-items: center;
+}
+
+.info-item-key {
+  color: #999;
+}
+
+.region {
+  display: flex;
+  margin-bottom: 40rpx;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 14rpx;
+  margin-bottom: 14rpx;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-band {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+  align-items: center;
+}
+
+.item-band .right {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.avaturl {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+
+.cancle {
+  background: #ff5722;
+  color: #fff;
+  height: 50rpx;
+  width: 130rpx;
+  margin-left: 20rpx;
+  font-size: 25rpx;
+  line-height: 50rpx;
+  border-radius: 8rpx;
+  text-align: center;
+}
+.content-list{
+  margin-bottom: 10rpx;
+}
+.circle-title{
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.circle-title .circle{
+  width: 10rpx;
+  height: 10rpx;
+  margin-right: 8rpx;
+  border-radius: 50%;
+  background-color:#ff5722;
+}
+.item .tag {
+  font-size: 24rpx;
+  color: #ff5722;
+  padding: 2rpx 4rpx;
+  margin-bottom: 10rpx;
+  border: 1rpx solid #ff5722;
+}
+.contentuploadPics{
+  width: 100%;
+}
+
+.uploadPics {
+  width: 20%;
+  height: 130rpx;
+  margin-right: 13rpx;
+}
+
+.comment, .brand {
+  background-color: #fff;
+}
+
+.comment .item {
+  padding: 15rpx;
+  margin-bottom: 5rpx;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.avaturl {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+
+.content {
+  padding: 20rpx;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+}
+
+.brand {
+  height: 80rpx;
+  border-top-right-radius: 6rpx;
+  border-top-left-radius: 6rpx;
+  margin-top: 20rpx;
+  line-height: 80rpx;
+  padding-left: 20rpx;
+  font-size: 29rpx;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.bottom {
+  position: fixed;
+  height: 100rpx;
+  background: #fff;
+  bottom: 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid #f8f8f8;
+}
+
+.icontext{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  color: #999;
+  text-align: center;
+}
+.icontext:last-child{
+  margin-right: 25rpx;
+}
+.bottom .input {
+  background-color: #f8f8f8;
+  border-radius: 8rpx;
+  padding: 0 20rpx;
+  width: 70%;
+  margin-left: 20rpx;
+}
+
+.coordinates {
+  text-align: center;
+  margin-right: 30rpx;
+}
+/* 管理弹出框 */
+
+.shade {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 10012;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+}
+
+.crate-album-guide {
+  width: 506rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  z-index: 1001;
+  padding:30rpx 25rpx 30rpx;
+  position: relatives;
+}
+.crate-album-guide .input{
+height: 70rpx;
+line-height: 70rpx;
+border-radius: 4rpx;
+margin-top: 10rpx;
+border:1px solid #ccc;
+padding-left: 12rpx;
+}
+.crate-album-guide .item{
+margin-bottom: 20rpx;
+}
+.crate-album-guide .btn-group {
+  margin-top: 40rpx;
+ display: flex;
+}
+.crate-album-guide .btn {
+  flex: 1;
+  font-size: 28rpx;
+  color: #fff;
+  border-radius: 30rpx;
+  height:60rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+.crate-album-guide .nobtn {
+  flex: 1;
+  font-size: 28rpx;
+  color: #fff;
+  margin-right: 15rpx;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 30rpx;
+  height:60rpx;
+  line-height: 60rpx;
+}

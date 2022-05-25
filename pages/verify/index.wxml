@@ -1,0 +1,8 @@
+<view class="container">
+  <form bindsubmit="bindSave">
+    <view class="inputitem">
+      <input class="input" name="stu" placeholder-class="placeholder" placeholder="学生"></input>
+    </view>
+    <button class="savebtn bg-color" formType="submit" loading="{{i_load}}" disabled="{{i_load}}">{{i_load?'提交中':'充值'}}</button>
+  </form>
+</view>

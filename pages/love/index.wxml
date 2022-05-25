@@ -1,0 +1,66 @@
+<login showlogin="{{showlogin}}" />
+<view class="nav bg-color">
+  <view class="search">
+    <view>
+      <icon type='search' size='15'> </icon>
+      <!-- bindinput实现数据双向绑定 -->
+      <input placeholder='请输入关键字进行搜索' placeholder-class='inputplace' bindinput='inputChange' type='text'></input>
+    </view>
+  </view>
+  <view class='scan' bindtap="btnsearch">
+    搜索
+  </view>
+</view>
+<view style="height:110rpx;"></view>
+<view wx:if="{{list.length>0}}">
+  <view class='list-item' wx:for="{{list}}" wx:key="index">
+    <!-- bindtap绑定事件todetail -->
+    <view class='item' bindtap='todetail' data-index='{{index}}'>
+      <view class='item-band flexstart'>
+        <view class='left'>
+          <image src='{{item.avaturl}}' class='avaturl'></image>
+        </view>
+        <view class='right'>
+          <view>{{item.nickname}}</view>
+          <view class='item-band top10'>
+            <text class='time'>{{item.addtimestr}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='item-content'>
+        <view class="content">
+          <view class='section'>{{item.content}}</view>
+          <view wx:if="{{item.imagelist.length>0}}">
+            <image wx:for="{{item.imagelist}}" class="uploadPics" mode="aspectFill" src="{{base_image_url+item}}"
+              wx:key="v"></image>
+          </view>
+        </view>
+        <view class='item-band '>
+          <view class='left'>
+          </view>
+          <view class='right' style='width:140rpx'>
+            <view class='item-band flexend'>
+              <view class="icontext">
+                <i-icon color='#999' type='message' size='18'></i-icon>
+                <text class='hot'>{{item.replycount}}</text>
+              </view>
+              <view style='margin:0 26rpx;' class="icontext">
+                <i-icon color='#999' type='browse' size='18'></i-icon>
+                <text class='hot'>{{item.visitcount}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:else class="content-null">
+  <image src='/images/nodata.png' mode='widthFix'></image>
+  <view class='f-gray13'>无相关数据~</view>
+</view>
+<view class='mess ' catchtap="toadd">
+	<image src='/images/add.png'></image>
+	<text class="theme-color">发布</text>
+</view>
+<view style="height:140rpx"></view>

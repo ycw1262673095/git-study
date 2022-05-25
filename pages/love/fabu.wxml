@@ -1,0 +1,58 @@
+<view style="height:20rpx"></view>
+<view wx:if="{{list.length>0}}">
+  <view class='list-item' wx:for="{{list}}" wx:key="index">
+    <view class='item' bindtap='todetail' data-index='{{index}}'>
+      <view class='item-band flexstart'>
+        <view class='left'>
+          <image src='{{item.avaturl}}' class='avaturl'></image>
+        </view>
+        <view class='right'>
+          <view class='item-band'>
+            <view >
+              <text>{{item.nickname}}</text>
+              <i-tag color="yellow" wx:if="{{item.isshow==0}}" class="i-tags">
+                已经被管理员隐藏
+              </i-tag>
+            </view>
+            <!-- catchtap阻止事件冒泡  绑定事件-->
+            <view class='cancle' catchtap='cancle' data-index="{{index}}">删除信息</view>
+          </view>
+          <view class='item-band top10'>
+            <text class='time'>{{item.addtimestr}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='item-content content'>
+        <view class='sectiontitle'>{{item.title}}</view>
+        <view class='section'>{{item.content}}</view>
+        <view wx:if="{{item.imagelist.length>0}}">
+          <image wx:for="{{item.imagelist}}" class="uploadPics" mode="aspectFill" src="{{base_image_url+ item}}"
+            wx:key="v"></image>
+        </view>
+        <view class='item-band '>
+          <view class='left'>
+            <view wx:if="{{item.cate.length>0}}" class="tags">
+              <view class='tag' wx:for="{{item.cate}}" wx:key="v">#{{item}}#</view>
+            </view>
+          </view>
+          <view class='right' style='width:140rpx'>
+            <view class='item-band flexend'>
+              <view class="icontext">
+                <i-icon color='#999' type='message' size='14'></i-icon>
+                <text class='hot'>{{item.replycount}}</text>
+              </view>
+              <view style='margin:0 16rpx;' class="icontext">
+                <i-icon data-index="{{index}}" color='#999' type='browse' size='14'></i-icon>
+                <text class='hot'>{{item.visitcount}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:else class="content-null">
+  <image src='/images/nodata.png' mode='widthFix'></image>
+  <view class='f-gray13'>暂无相关数据~</view>
+</view>

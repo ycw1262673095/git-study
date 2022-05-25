@@ -1,0 +1,7 @@
+<view class="uploadPic_list">
+  <view class="uploadPic_box i-uploadpic" wx:if="{{uploadlist.length>0}}" wx:for="{{uploadlist}}" wx:key="index"> 
+      <image src="{{item}}" class="uploadPic"   bindtap="preview" data-index="{{index}}"></image>
+      <image src="removestuphoto.png" data-index="{{index}}" bindtap="removeimage"  class="removestuphoto" mode="aspectFill" ></image>
+  </view>
+  <image src="stuaddpic.png" wx:if="{{maxsize==0||uploadlist.length<maxsize}}" bindtap="checkimg" class="uploadPic_box i-uploadpic" ></image>
+</view>

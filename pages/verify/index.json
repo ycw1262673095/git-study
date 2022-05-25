@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "预留信息",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "usingComponents": { 
+    "uploadmore": "../../dist/uploadmore/index"
+  }
+}

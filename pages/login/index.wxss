@@ -1,0 +1,55 @@
+.crate-album-guide {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  position: fixed;
+  top: 5vh;
+  width: 92vw;
+  min-height: 62vh;
+  margin-left: 3vw;
+  padding: 30rpx 25rpx 10rpx;
+}
+page{
+  background-color: #fff;
+  box-sizing:border-box;
+}
+.bg{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+.textright{
+  text-align: right;
+  color: rgb(86, 119, 153);
+  font-size: 25rpx;
+}
+
+.crate-album-guide .input {
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 4rpx;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+}
+.weight{
+  font-weight: bolder;
+}
+.crate-album-guide .item {
+  margin-bottom: 20rpx;
+}
+
+.crate-album-guide .btn-group {
+  margin-top: 40rpx;
+  display: flex;
+}
+.crate-album-guide .btn {
+  flex: 1;
+  font-size: 26rpx;
+  color: #fff;
+  height: 70rpx;
+  border-radius: 35rpx;
+  line-height: 70rpx;
+  text-align: center;
+}

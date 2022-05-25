@@ -1,0 +1,56 @@
+<view class="container">
+<!-- 携带from中bindSave数据触发submit事件-->
+  <form bindsubmit="bindSave">
+    <view class='item'>
+      <view class='left'>
+        <text>填写标题</text>
+      </view>
+      <view class='right'>
+        <input class="input" name="title" value="{{list.title}}" placeholder="请输入标题"></input>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='left'>
+        <text>联系方式</text>
+      </view>
+      <view class='right'>
+        <input class="input" name="phone" value="{{list.phone}}" placeholder="请输入手机"></input>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='left'>
+        <text>填写位置</text>
+      </view>
+      <view class='right'>
+        <input class="input" name="address" value="{{list.address}}" placeholder="请输入地点"></input>
+        <view class="btn bg-color" bindtap="getaddress">获取地址</view>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='left'>
+        <text>选择类型</text>
+      </view>
+      <view class='right'>
+      <!-- 底部弹窗 基础选择器-->
+      <!-- bindchange 是当value改变时触发事件change range-key 是显示的内容 -->
+        <picker bindchange="bindtypeChange" value="{{tindex}}" range-key="title" range="{{typelist}}">
+          <input class="input" disabled='disabled' value="{{typelist[tindex].title}}" placeholder="请选择类型"></input>
+        </picker>
+      </view>
+    </view>
+    <view class='item' hidden="{{tindex!=0}}">
+      <view class='left'>
+        <text>悬赏价格</text>
+      </view>
+      <view class='right'>
+        <input class="input" name="price" value="{{list.price}}" placeholder="请输入价格"></input>
+      </view>
+    </view>
+    <view class="mbinput">
+      <textarea placeholder="信息内容" class="section" value="{{list.content}}" maxlength="300" name="content" />
+    </view>
+    <uploadmore id="uploadmore" uploadlist="{{imagelist}}" i-uploadpic="myuploadPic" maxsize="3"></uploadmore>
+    <button class="savebtn bg-color" formType="submit" loading="{{i_load}}"
+      disabled="{{i_load}}">{{i_load?'发布中':edit==1?'修改':'添加'}}</button>
+  </form>
+</view>

@@ -1,0 +1,196 @@
+
+
+
+.item {
+  background-color: #fff;
+  border-radius: 4rpx;
+  padding: 18rpx;
+  margin-bottom: 14rpx;
+}
+.item-band {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+
+.flexstart {
+  justify-content: flex-start;
+}
+.flexend {
+  justify-content: flex-end;
+}
+
+.justnormal {
+  align-items: unset;
+}
+.icontext{
+  display: flex;
+  align-items: center;
+}
+
+.item-band .right {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.rightname{
+  line-height: 80rpx;
+}
+
+.nav .item-band.flexstart {
+  padding: 15rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.top10 {
+  margin-top: 10rpx;
+}
+
+.time, .hot {
+  color: #999;
+}
+
+.uploadPics {
+  width: 20%;
+  height: 130rpx;
+  margin-right: 13rpx;
+}
+
+.comment .item {
+  padding: 15rpx;
+  margin-bottom: 5rpx;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.avaturl {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+
+
+.tag{
+  padding: 2rpx 5rpx;
+  margin: 0rpx 4rpx 0 0;
+  font-size: 22rpx;
+  background: #ddd;
+}
+
+.tags{
+margin-bottom: 20rpx;
+display: flex;
+overflow-x: scroll;
+flex-wrap: nowrap;
+}
+.swiper_box {
+  width: 100%;
+  padding: 10rpx 20rpx 0;
+  height: 180rpx;
+  box-sizing: border-box;
+}
+
+.swiper_box image {
+  height: 180rpx;
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.brand {
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 20rpx;
+  font-size: 29rpx;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+
+/* 帖子和兼职 */
+.topTabSwiper {
+  background: #fff;
+  height: 82rpx;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.cancle{
+  background:#ff5722;
+  color: #fff;
+  height: 50rpx;
+  width: 180rpx;
+  font-size: 25rpx;
+  line-height: 50rpx;
+  border-radius: 8rpx;
+  text-align: center;
+}
+.topTabSwiperbottom{
+  height: 80rpx;
+}
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.tab {
+  line-height: 80rpx;
+  height: 80rpx;
+  width: 30%;
+  margin:0 10%;
+  text-align: center;
+}
+/* 弹出层 */
+.modal-bg{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9999;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0,.6);
+}
+.modal{
+  width: 90%;
+  height: 800rpx;
+  background: #fff;
+  box-sizing: border-box;
+  margin:140rpx auto 0;
+  border-radius: 18rpx;
+}
+.modal-head{
+  text-align: center;
+  line-height: 70rpx;
+  height: 70rpx;
+  border-bottom: 1px solid #f8f8f8;
+}
+.modal-content{
+  height: 630rpx;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0 20rpx;
+}
+.modal-content image{
+  width: 100%;
+}
+.modal-foot{
+  height: 100rpx;
+}
+.modal-foot .btn{
+  height: 60rpx;
+  width: 300rpx;
+  text-align: center;
+  line-height: 60rpx;
+  margin: 20rpx auto 0;
+  border-radius: 30rpx;
+  color: #fff;
+}

@@ -1,0 +1,68 @@
+<scroll-view>
+	
+	<view class='item'>
+		<view class='item-band flexstart'>
+			<view class='left'>
+				<image src='{{list.avaturl}}' class='avaturl'></image>
+			</view>
+			<view class='right'>
+				<view class="item-band">
+					<view>
+						<text>{{list.nickname}} </text>
+					</view>
+					<view class="left">
+						<view class="tag">发布者</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="subtitle_desc">
+		<view class="subtitle_desc-item">
+			<van-icon name="time" />
+			<text class='time'>{{list.addtimestr}}</text>
+		</view>
+		<view class="subtitle_desc-item">
+			<van-icon type="browse" />
+			<text class='time'>{{list.visitcount}}</text>
+		</view>
+	</view>
+		<view class="circle-title">
+			<view class="circle"></view> 详情
+		</view>
+		<view class="content-list">{{list.content}}</view>
+		<view wx:if="{{list.imagelist.length>0}}">
+			<image wx:for="{{list.imagelist}}" class="contentuploadPics" mode="aspectFill" src="{{base_image_url+item}}" wx:key="index"></image>
+		</view>
+	</view>
+	<view class='brand' wx:if="{{commentlist.length>0}}">评论{{list.replycount}}</view>
+	<view class='comment' wx:if="{{commentlist.length>0}}">
+		<view class='item' wx:for="{{commentlist}}" wx:key="index">
+			<view class='item-band justnormal'>
+				<view class='left'>
+					<image src='{{item.avaturl}}' class='avaturl'></image>
+				</view>
+				<view class='right'>
+					<view class='left1 '>
+						<text>{{item.nickname}}</text>
+					</view>
+					<view class='item-content'>
+						<view class='section'>{{item.content}}</view>
+						<view wx:if="{{item.imagelist.length>0}}">
+							<image wx:for="{{item.imagelist}}" class="uploadPics" mode="aspectFill" src="{{base_image_url+item}}" wx:key="rr"></image>
+						</view>
+					</view>
+					<text class='timecolor'>{{item.addtimestr}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</scroll-view>
+<view class='bottom'>
+	<input class="input" type='text' disabled bindtap="toreply" placeholder='我要回复……'></input>
+	<button class="icontext"  open-type="share">       
+		<van-icon color='#999' type="share"size='23' />
+	</button>
+	<view class="icontext">
+    <van-icon  color='#999' type="more" size='23' />
+	</view>
+</view>

@@ -1,0 +1,21 @@
+<view class="classname">
+  <view class="header">
+    <image class="logo" src="{{list.faceimage}}"></image>
+  </view>
+  <view class="content">
+    <view class="describe">
+      <view class="des-list">
+        <view>
+          <text class="list-left">{{list.title}}</text>
+        </view>
+      </view>
+      <view>
+        <view class="des-content">
+          <import src="../../wxParse/wxParse.wxml" />
+          <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

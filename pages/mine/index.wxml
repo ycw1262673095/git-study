@@ -1,0 +1,44 @@
+<wxs src="./edit.wxs" module="tools" />
+<view class="item bg-color">
+  <view class='content'>
+    <view class='left'>
+      <image src="{{tools.getimage(userlist.avaturl,baseurl)}}" class="avaturl"></image>
+    </view>
+    <view class='right'>
+        <view class='right1'>
+          <text>{{userlist.nickname}} 余额{{userlist.price}}</text>
+        </view>
+        <view class='tag' bindtap='toedit'>
+          <i-icon type="brush" slot="icon" size='16' />编辑信息
+        </view>
+    </view>
+  </view>
+  <view class="hd" style="transform:rotateZ({{angle}}deg);">
+    <image class="wave" src="../../images/wave.png" mode="aspectFill"></image>
+    <image class="wave wave-bg" src="../../images/wave.png" mode="aspectFill"></image>
+  </view>
+</view>
+ <i-cell title="系统简介" is-link  url="/pages/about/index">
+  <i-icon type="editor" slot="icon" size='22' />
+</i-cell>
+<i-cell title="我的表白墙" is-link  url="/pages/love/fabu">
+  <i-icon type="like" slot="icon" size='22' />
+</i-cell>
+<i-cell title="我的失物" is-link  url="/pages/index/fabu">
+  <i-icon type="tasklist" slot="icon" size='22' />
+</i-cell>
+<i-cell title="意见反馈" is-link  url="/pages/feedback/index">
+  <i-icon type="activity" slot="icon" size='22' />
+</i-cell>
+<i-cell title="充值" is-link  url="/pages/charge/index">
+  <i-icon type="coupons" slot="icon" size='22' />
+</i-cell>
+<view class='accupy'></view>
+<i-cell-group class='i-cell-group'>
+    <i-cell title="退出登录" bindtap="logout">
+    <i-icon type="send" slot="icon" size='22' />
+  </i-cell>
+</i-cell-group>
+<view class='foot'>
+  <i-icon type='group' size='15' color='#999'></i-icon>{{tip}}
+</view>

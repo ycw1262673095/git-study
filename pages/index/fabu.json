@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的发布",
+  "usingComponents": {
+    "i-icon": "../../dist/icon/index",
+    "i-loading": "../../dist/load-more/index",
+    "i-tag": "../../dist/tag/index"
+  }
+}

@@ -1,0 +1,174 @@
+page {
+  background: #f8f8f8;
+}
+
+.contain-box {
+  width: 92vw;
+  position: fixed;
+  left: 4vw;  
+  box-sizing: border-box;
+  z-index: 1;
+  max-height: 100vh;
+  overflow-y:scroll;
+}
+
+.itembox {
+  background: #fff;
+  width: 100%;
+  padding: 30rpx 20rpx;
+  border-radius: 20rpx;
+  margin: 20rpx 0;
+  box-sizing: border-box;
+}
+
+.itembox-head {
+  display: flex;
+  align-items: center;
+}
+
+.itembox-line {
+  width: 6rpx;
+  height: 30rpx;
+  margin-right: 7rpx;
+}
+
+.itembox-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+}
+
+.textarea {
+  border-radius: 10rpx;
+  border: 1px dashed #eee;
+  background: #fafafa;
+  width: 100%;
+  padding: 20rpx;
+  color: #999;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+}
+
+.subjectheight {
+  height: 122rpx;
+}
+
+.availabilityheight {
+  height: 530rpx;
+}
+
+.Hobbiesheight {
+  height: 202rpx;
+}
+
+
+.banertitle {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.head {
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+}
+
+.inputitem {
+  border: 1px dashed #eee;
+  border-radius: 4rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 0;
+  align-items: center;
+}
+
+.inputlabel {
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  margin: 20rpx 0 10rpx;
+}
+
+.inputitem .input {
+  width: 80%;
+  padding: 0rpx 20rpx;
+  margin-left: 20rpx;
+}
+
+.tips {
+  margin-top: 40rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+}
+
+
+
+.loginbtn {
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: #FFDD33;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  color: #fff;
+  text-align: center;
+  border-radius: 15rpx;
+  margin-top: 60rpx;
+  margin-bottom: 30rpx;
+}
+
+.placeholder {
+  font-size: 27rpx;
+}
+
+
+.imagecontent {
+  border-top: 1rpx solid #eee;
+  display: flex;
+  padding: 20rpx 0 10rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imagetile {
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+}
+
+.imagesubtile {
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #999999;
+}
+
+.desc{
+  padding: 10rpx;
+}
+.imageright {
+  display: flex;
+  align-items: center;
+}
+
+.avaturl {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 18rpx;
+}
+
+.grayright {
+  width: 14rpx;
+  height: 24rpx;
+}
+
+.justbetwwen {
+  justify-content: space-between;
+}

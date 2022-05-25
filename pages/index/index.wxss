@@ -1,0 +1,198 @@
+/* 搜索栏 */
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 31rpx;
+  padding: 10rpx 0;
+  z-index: 9999;
+  width: 100%;
+  position: fixed;
+}
+.scan{
+  width: 100rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 29rpx;
+  margin: 0 10rpx;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10rpx;
+}
+.search {
+  width:80%;
+  display: flex;
+  margin:0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8rpx;
+}
+.search view{
+  display: flex;
+  flex-direction: row;
+}
+.search icon {
+  margin: 0rpx 15rpx;
+  display: flex;
+  align-items: center;
+}
+.search input {
+  width:470rpx;
+  height: 70rpx;
+  font-size: 29rpx;
+}
+.inputplace{
+  font-size: 29rpx;
+}
+.mess{
+  position: fixed;
+  bottom: 160rpx;
+  right:5%;
+  display: flex;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 45rpx;
+  font-size: 25rpx;
+  color: #444;
+  background: #fff;
+  z-index: 10;
+  padding: 2rpx;
+  text-align: center;
+  line-height: 26rpx;
+  color: #666;
+  box-shadow: 4rpx 4rpx 4rpx #ccc;
+  flex-direction: column;
+}
+.mess text{
+  margin-top: 3rpx;
+}
+.mess image{
+  width: 52rpx;
+  height: 52rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+
+
+
+/* 帖子的样式 */
+.item {
+  background-color: #fff;
+  border-radius: 4rpx;
+  padding: 18rpx;
+  margin-bottom: 14rpx;
+}
+.item-band {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+
+.flexstart {
+  justify-content: flex-start;
+}
+.flexend {
+  justify-content: flex-end;
+}
+.icontext{
+  display: flex;
+  align-items: center;
+}
+
+
+.justnormal {
+  align-items: unset;
+}
+.content{
+  min-height: 100rpx;
+}
+.item-band .right {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.rightname{
+  line-height: 80rpx;
+}
+
+.nav .item-band.flexstart {
+  padding: 15rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.top10 {
+  margin-top: 10rpx;
+}
+
+.time, .hot {
+  color: #999;
+}
+
+.uploadPics {
+  width: 20%;
+  height: 130rpx;
+  margin-right: 13rpx;
+}
+
+.comment .item {
+  padding: 15rpx;
+  margin-bottom: 5rpx;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.avaturl {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+
+
+
+.left {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.brand {
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 20rpx;
+  font-size: 29rpx;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+
+.topTabSwiper {
+  background: #fff;
+  height: 82rpx;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  z-index: 9999;
+  width: 100%;
+  position: fixed;
+  top: 90rpx;
+}
+.topTabSwiperbottom{
+  height: 80rpx;
+}
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.tab {
+  line-height: 80rpx;
+  height: 80rpx;
+  width: 30%;
+  margin:0 10%;
+  text-align: center;
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "充值",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "usingComponents": { 
+    "uploadmore": "../../dist/uploadmore/index"
+  }
+}

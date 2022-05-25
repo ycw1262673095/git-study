@@ -1,0 +1,18 @@
+		<view class="crate-album-guide">
+  		<view class="item">
+  			<view class="weight">账户</view>
+  			<view class="">
+  				<input type="text" class="input" name="name" value="{{name}}" bindinput="inputname" placeholder="请输入账户"></input>
+  			</view>
+  		</view>
+  		<view class="item">
+  			<view class="weight">密码</view>
+  			<view >
+  				<input type="password" class="input" name="password" value="{{password}}" bindinput="inputpassword" placeholder="请输入密码"></input>
+  			</view>
+  		</view>
+  		<view class="textright theme-color" bindtap="toregister">没有账户,去注册~</view>
+  		<view class="btn-group">
+  			<view bindtap="login" class="btn  bg-color">登录</view>
+  		</view>
+  	</view>

@@ -1,0 +1,125 @@
+.button-text {
+  background-color: #fff;
+  font-size: 14px;
+  line-height: unset;
+  padding: unset;
+  text-align: unset;
+  color: #bbb;
+}
+
+.button-text:after {
+  border: unset;
+}
+
+.avaturl {
+  width: 115rpx;
+  height: 115rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 14rpx;
+}
+
+.name {
+  margin-right: 35rpx;
+}
+
+.foot {
+  color: #999;
+  margin: 40rpx 0;
+  font-size: 23rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.des {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.item {
+  height: 340rpx;
+  padding: 100rpx 30rpx 0 30rpx;
+  box-sizing: border-box;
+  font-size: 29rpx;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.login {
+  font-size: 34rpx !important;
+}
+
+.hd {
+  position: absolute;
+  bottom: 0rpx;
+  left: 50%;
+  width: 1000rpx;
+  margin-left: -500rpx;
+  height: 50rpx;
+  transition: all 0.35s ease;
+}
+.wave {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: -10;
+  opacity: 0.725;
+  height: 260rpx;
+  width: 2250rpx;
+  animation: wave 10s linear infinite;
+}
+.wave-bg {
+  z-index: 1;
+  animation: wave-bg 10.25s linear infinite;
+}
+
+@keyframes wave {
+  from {
+    transform: translate3d(125rpx, 0, 0);
+  }
+
+  to {
+    transform: translate3d(1125rpx, 0, 0);
+  }
+}
+
+@keyframes wave-bg {
+  from {
+    transform: translate3d(375rpx, 0, 0);
+  }
+
+  to {
+    transform: translate3d(1375rpx, 0, 0);
+  }
+}
+.item .right1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25rpx;
+}
+
+.tab-item {
+  display: inline-block;
+  text-align: center;
+  height: 110rpx;
+  width: 20%;
+  margin: 0 auto;
+  font-size: 27rpx;
+}
+.tab-item .img-circle {
+  height: 50rpx;
+  width: 50rpx;
+}
+.accupy {
+  height: 15rpx;
+}
